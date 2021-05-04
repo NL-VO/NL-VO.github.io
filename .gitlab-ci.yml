@@ -4,7 +4,7 @@ validate-pages:
   stage: test
   before_script:
     - mkdir ~/validator
-    - apk add git python2 curl
+    - apk add git curl
   script:
     - >
       for file in $(ls *.htm*); do
