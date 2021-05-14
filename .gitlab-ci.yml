@@ -23,7 +23,7 @@ deploy-pages:
     - ssh-keyscan dop276.astron.nl >> ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - rsync . -avr --exclude ".git/"  grange@dop276.astron.nl:/export/astron/grange/public_html/vonl/
+    - rsync . -avr --exclude ".git/" --exclude ".gitlab-ci.yml" grange@dop276.astron.nl:/export/astron/grange/public_html/vonl/
   only:
     - deploy
     - deploy-debug
