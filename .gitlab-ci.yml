@@ -11,3 +11,17 @@ validate-pages:
           curl -H "Content-Type: text/html; charset=utf-8" --data-binary @$file https://validator.nu/?out=json
        done
 
+deploy-pages:
+  stage: deploy
+  before_script:
+    - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan dop276.astron.nl >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - rsync * --exclude ".git/" -a dop276.astron.nl:/export/astron/grange/public_html/vonl/
+  only:
+    - deploy
