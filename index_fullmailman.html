@@ -10,9 +10,9 @@
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
 <title>Netherlands Virtual Observatory</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="keywords" content="astronomy, virtual observatory, Netherlands">
+<meta name="description" content="Home page of the Netherlands Virtual Observatory">
+<meta name="author" content="NLVO">
 <link rel="shortcut icon" href="favicon.ico">
 
 <!-- bootstrap css -->
@@ -58,91 +58,70 @@
             </ul>
           </div>
         </nav>
-      </div>
-      </div>
-        <div class="nlvo_left">
-          <h1 class="what_taital">VO activity in the Netherlands</h1>
-          <h3>The VO work in the Netherlands is comprised of:</h3>
-          <p>
-            <ul class="toplist list-inline">
-              <li>University of Groningen:
-                <ul class="indentlist">
-                  <li>Has historically been involved with the VO and long-lasting experience using VO standards to share data. </li>
-                  <li>Historical involvement in the SAMP standard. </li>
-                  <li>Using VODML for the data model of the Euclid mission. </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="toplist list-inline">
-              <li>ASTRON:
-                <ul class="indentlist">
-                  <li>Data sets from our telescopes also cover data from the sun and timing data, which are VO standards under current development.</li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="toplist list-inline">
-              <li>ASTRON, together with the University of Amsterdam:
-                <ul class="indentlist">
-                  <li>Using VOEvents to transmit transient detections by our telescopes</li>
-                  <li>Also consume VOEvents for follow-up observations</li>
-                  <li>Planning to make the event database VO complient</li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="toplist list-inline">
-              <li>ASTRON, together with Jive:
-                <ul class="indentlist">
-                  <li>Strongly involved in the Radio Astronomy Interest Group which is working on VO standards for radio astronomy data</li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="toplist list-inline">
-              <li>We have links with Leiden University and the Radboud University (Nijmegen) and , as well as with SRON who have interest in being involved in the VO, at the user level. We organise regular meetings to discuss how the VO is evolving and how to share the work we do on a national level.</li>
-            </ul>
+        <div class="banner_main">
+          <h1 class="banner_taital">Netherlands Virtual Observatory</h1>
+          <p class="banner_text">Welcome to the home page of the Netherlands Virtual Observatory (NLVO).
+            On these pages we introduce the Virtual Observatory, and describe the work being undertaken by the Dutch
+            community to improve VO standards and increase the amount of astronomical data shared through
+            the VO protocols.</p>
 
+          <p class="banner_text">
+            Shown at right is an example of combining public Dutch data using the VO.
+            The image of <a href="https://en.wikipedia.org/wiki/Pinwheel_Galaxy">Messier 101</a> from the <a href="https://lofar-surveys.org/surveys.html">LOFAR Two-metre Sky Survey</a> (LoTSS; <a href="http://adsabs.harvard.edu/abs/2017A%26A...598A.104S">Shimwell et al., 2017</a>) is overplotted with contours from the <a href="https://heasarc.gsfc.nasa.gov/W3Browse/all/wenss.html">Westerbork Northern Sky Survey</a> (WENSS; <a href="https://ui.adsabs.harvard.edu/abs/1997A%26AS..124..259R%2F">Rengelink et al., 1997</a>).
         </div>
-        <div class="nlvo_right">
-         <div class="box_logos">
-          <h2 class="what_taital">Logos</h2>
-            <p class="logos_text"> NLVO has logos for different background colours. You can pick one depending on the material you need it for </p>
-            <table>
-              <tr>
-                <td class="logcell"><a href="images/logos/logo_cmyk.png"><img class="logoitem" alt="NLVO logo for light background" src="images/logos/logo_cmyk.png" /></a></td>
-                <td class="logcell"><a href="images/logos/logo_background_purple.png"><img class="logoitem" alt="NLVO logo on purple background" src="images/logos/logo_background_purple.png"/></a></td>
-              </tr>
-              <tr>
-                <td class="logcell"><a href="images/logos/logo_background_blue.png"><img class="logoitem" alt="NLVO logo on blue background" src="images/logos/logo_background_blue.png"/></a></td>
-                <td class="logcell"><a href="images/logos/logo_background_dblue.png"><img class="logoitem" alt="NLVO logo on dark blue background" src="images/logos/logo_background_dblue.png"/></a></td>
-              </tr>
-            </table>
+      </div>
+      <div class="header_right">
+        <img src="images/M101_lofar_WENSS_circ.png" alt="M101 in the LoTSS
+        with contours from the WENSS" class="banner_img">
+      </div>
+    </div>
+    <!--header section end -->
+    <!--about section start -->
+    <div class="ivoa_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="ivoa_taital">The Virtual Observatory </h1>
+            <p class="ivoa_text">The Virtual Observatory (VO) is the vision that astronomical datasets and other resources should work as a
+              seamless whole. Many projects and data centres worldwide are working towards this goal under the aegis of the International Virtual Observatory Alliance (IVOA).
+              The NLVO is an IVOA member.
+            <div class="moremore_bt"><a href="https://www.ivoa.net/">Read More </a></div>
+          </div>
+          <div class="col-md-4">
+            <div><img src="images/ivoa_logo.jpg" alt="IVOA logo" class="image_1"></div>
           </div>
         </div>
+      </div>
+    </div>
+    <!--about section end -->
 
-    <!--header section end -->
     <!--footer section start -->
     <div class="footer_section">
-         <!-- copyright section start -->
-               
+        <!-- copyright section start -->
         <div class="mail_table">
           <form action="https://mailman.astron.nl/subscribe/nlvo" method="POST">`
             <table>
             <tbody>
             <tr>
-              <td class="mail_text">Join our mailing list:</td>
+            <td>Email address:</td>
+            <td><input name="email" size="20" type="Text" value="" /></td>
+            <td rowspan="2">Daily digest?</td>
+            <td rowspan="2"><input checked="checked" name="digest" type="radio" value="0" /> No <input name="digest" type="radio" value="1" /> Yes</td>
+            <td rowspan="2"><center><input name="email-button" type="Submit" value="Subscribe" /></center></td>
             </tr>
             <tr>
-            <td><input class="mail_box" name="email" type="Text" value="" label="email address" placeholder="email address"/></td>
-            <td><input class="mail_submit" name="email-button" type="Submit" value="Subscribe" /></td>
+            <td>Name (optional):</td>
+            <td width="33%"><input name="fullname" size="30" type="Text" value="" /></td>
             </tr>
             </tbody>
             </table>
           </form>
-      </div>
+        </div>
         <div class="copyright_section">
           <div class="copyright_text">This page is licensed to the public under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license. <br />Template by <a href="https://html.design">Free html  Templates</a>, licensed under <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0</a></div>
         </div>
         <!-- copyright section end -->
-      </div>
+    </div>
     <!--footer section end -->
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
