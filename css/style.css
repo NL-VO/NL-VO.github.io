@@ -846,17 +846,36 @@ button {
     float: left;
     padding-top: 80px;
 }
-.mail_section {
-    width: 90%;
+
+.mail_table {
+    width: 600px;
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.mail_text {
+    width: 100%;
     float: left;
-    padding-left: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #d1d2d3;
+    height: auto;
+    padding: 5px 15px;
+    margin-top: 8px;
+    background-color: transparent !important;
+}
+.mail_box {
+    width: 95%;
+}
+.mail_submit {
+    background-color: #d1d2d3;
 }
 .mail_text_1 {
     width: 100%;
     float: left;
     font-size: 18px;
     color: #666666;
-    background-color: transparent !important;
     border-bottom: 1px solid #050000 !important;
     padding-right: 20px;
     border: 0px;
@@ -923,16 +942,6 @@ button {
     margin: 0px;
     line-height: 40px;
 }
-.mail_text {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #d1d2d3;
-    background-color: #ffffff;
-    height: auto;
-    padding: 5px 15px;
-    margin-top: 18px;
-}
 .subscribe_bt{
     width: 100%;
     float: left;
@@ -980,13 +989,12 @@ button {
 }
 
 .copyright_section {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
-    border-top: 1px solid #fff;
-    margin-top: 55px;
     text-align: center;
 }
 .copyright_text {
+    border-top: 1px solid #fff; 
     width: 100%;
     float: left;
     color: #ffffff;
